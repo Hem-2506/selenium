@@ -1,0 +1,10 @@
+package ScenarioBasedAutomation;
+
+public class Scenario6_countLinks {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

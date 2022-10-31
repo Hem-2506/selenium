@@ -1,0 +1,33 @@
+package com.day1.scripts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FacebookUser {
+
+	public static void main(String[] args) {
+		 //Step-1
+        //Set the driver path
+        System.setProperty("webdriver.gecko.driver", ".//Drivers//geckodriver.exe");  
+        
+        //Step - 2
+        //Crate the instance for FireFox Browser
+        WebDriver wd = new FirefoxDriver();
+        
+        wd.navigate().to("https://www.facebook.com/");
+        wd.findElement(By.name("email")).sendKeys("shjsk6@gamil.com");                
+        wd.findElement(By.name("email")).sendKeys(Keys.TAB);
+        
+        wd.findElement(By.name("pass")).sendKeys("password");                
+        wd.findElement(By.name("pass")).sendKeys(Keys.TAB);
+        
+        wd.findElement(By.name("login")).sendKeys(Keys.ENTER);
+       
+        //Thread.sleep(5000);
+        //wd.close();
+	        
+	}
+
+}

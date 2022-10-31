@@ -1,0 +1,12 @@
+package com.junit.scripts;
+
+import org.testng.annotations.Test;
+
+class TestCase1 {
+
+	@Test
+	public void test() {
+		System.out.println("Say Hi");
+	}
+
+}

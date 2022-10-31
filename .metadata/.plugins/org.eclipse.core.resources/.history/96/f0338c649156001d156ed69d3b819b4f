@@ -1,0 +1,14 @@
+package com.junit.scripts;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TestCase1 {
+
+	@Test
+	public void test() {
+		System.out.println("Test Hi");
+	}
+
+}

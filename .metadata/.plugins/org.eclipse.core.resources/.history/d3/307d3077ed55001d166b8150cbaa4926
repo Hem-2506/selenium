@@ -1,0 +1,27 @@
+package ScenarioBasedAutomation;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Scenario3AlertRediff {
+
+	public static void main(String[] args) throws InterruptedException {
+		   //Step-1
+        //Set the driver path
+        System.setProperty("webdriver.gecko.driver", ".//Drivers//geckodriver.exe");  
+        
+        //Step - 2
+        //Crate the instance for FireFox Browser
+        WebDriver wd = new FirefoxDriver();
+
+        wd.get("https://mail.rediff.com/cgi-bin/login.cgi");
+        wd.findElement(By.name("login")).sendKeys("testdata1");
+       wd.findElement(By.name("proceed")).click();
+       Thread.sleep(6000);
+       Alert alt = wd.switchTo().alert();
+       
+	}
+
+}

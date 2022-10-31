@@ -1,0 +1,39 @@
+package com.day1.scripts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FacebookUser {
+
+	public static void main(String[] args) {
+		 System.setProperty("webdriver.gecko.driver",".//Drivers//geckodriver.exe ");
+	        
+	        // Step :- 2
+	        // Create a instance for Firefoxdriver
+	        
+	        WebDriver wd = new FirefoxDriver();
+	        
+//	        Maximize the browser window
+	        wd.manage().window().maximize();
+	        
+	// Invoke application under test
+	        wd.get("https://www.facebook.com/");
+	        
+	        wd.findElement(By.name("email")).sendKeys("Testdatauser1");
+	        wd.findElement(By.name("email")).sendKeys(Keys.TAB);
+	        wd.findElement(By.name("password")).sendKeys("Testuser345");
+	        wd.findElement(By.name("email")).sendKeys(Keys.TAB);
+	        
+	        if(wd.findElement(By.xpath("//button[contains(text(),\"Login\")]")).isDisplayed()) {
+	            //wd.findElement(By.xpath("//button[contains(text(),\"Login\")]")).clear();
+	            wd.findElement(By.xpath("//button[contains(text(),\"Login\")]")).click();
+	        }
+	        else {
+	            System.out.println("Press the login button");
+	        }   
+	        
+	}
+
+}

@@ -1,0 +1,38 @@
+package ScenarioBasedAutomation;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Scenario4_selectList {
+
+	public static void main(String[] args) {
+		   //Set the driver path
+        System.setProperty("webdriver.gecko.driver", ".//Drivers//geckodriver.exe");  
+        
+        //Step - 2
+        //Crate the instance for FireFox Browser
+        WebDriver wd = new FirefoxDriver();
+
+        wd.get("https://demo.guru99.com/selenium/newtours/register.php");
+        
+        Select sel = new Select(wd.findElement(By.xpath("//select[@name=\"country\")]")));
+        
+        
+   List <WebElement> l =  sel.getOptions();
+   
+   int count = l.size();
+   for(int i=0; i<count; i++) {
+	   System.out.println();
+	   String countryval = l.get(i).getText();
+	  System.out.println(countryval);
+   }
+   
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.day1.scripts;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FacebookUser {
+
+	public static void main(String[] args) {
+		 System.setProperty("webdriver.gecko.driver",".//Drivers//geckodriver.exe ");
+	        
+	        // Step :- 2
+	        // Create a instance for Firefoxdriver
+	        
+	        WebDriver wd = new FirefoxDriver();
+	        
+//	        Maximize the browser window
+	        wd.manage().window().maximize();
+	        
+	// Invoke application under test
+	        wd.get("https://www.facebook.com/");
+	        
+	}
+
+}

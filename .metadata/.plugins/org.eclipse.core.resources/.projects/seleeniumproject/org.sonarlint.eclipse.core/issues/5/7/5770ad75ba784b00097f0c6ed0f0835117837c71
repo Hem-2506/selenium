@@ -1,0 +1,10 @@
+
+p	java:S106"9Replace this use of System.out or System.err by a logger.(ÿÿ€’ùÿÿÿÿ8À¹ô»Â0HÒRMAJORZ
+CODE_SMELL
+ž
+java:S1192"cDefine a constant instead of duplicating this literal "input[id*='SeniorCitizenDiscount']" 3 times.(ÿÿ€’ùÿÿÿÿ8À¹ô»Â0HÓRCRITICALZ
+CODE_SMELL
+p	java:S106"9Replace this use of System.out or System.err by a logger.(ÿÿ€’ùÿÿÿÿ8À¹ô»Â0H×RMAJORZ
+CODE_SMELL
+…	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÆÑè©HØRMINORZ
+CODE_SMELL

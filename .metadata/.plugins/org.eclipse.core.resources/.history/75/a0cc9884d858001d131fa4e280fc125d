@@ -1,0 +1,16 @@
+package com.testng.script;
+
+import org.testng.annotations.Test;
+
+public class TC002 {
+  @Test
+  public void funMethod1() {
+      String nm = "TestngTest";
+      StringBuffer sb = new StringBuffer(nm);
+      StringBuffer sb1 = sb.reverse();
+
+
+
+     System.out.println(sb1);
+}
+}

@@ -1,0 +1,10 @@
+package ScenarioBasedAutomation;
+
+public class Scenario5_getText {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,9 @@
+package ScenarioBasedAutomation;
+
+public class Scenario7 {
+
+	public static void main(String[] args) {
+		
+	}
+
+}
